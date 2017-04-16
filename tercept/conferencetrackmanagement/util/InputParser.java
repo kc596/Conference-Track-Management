@@ -48,7 +48,7 @@ public class InputParser {
 	/**
 	 * @return a list of talks parsed from the input file.
 	 */
-	public List<String> getListOfTalks(){
+	public List<String> getListOfTalksAsString(){
 		return listOfTalks;
 	}
 }

@@ -8,7 +8,7 @@ package tercept.conferencetrackmanagement.util;
 
 public class Time {
 	private Time(){}
-	
+
 	/**
 	* Takes the time in minutes and returns its string representation in AB:BC AM or AB:BC PM
 	* format.
@@ -44,12 +44,12 @@ public class Time {
 
 		String displayValue;
 		if (hours < 12) {
-			displayValue = " AM";
+			displayValue = "AM";
 			if (hoursToDisplay.equals("00")) {
 				hoursToDisplay = "12";
 			}
 		} else {
-			displayValue = " PM";
+			displayValue = "PM";
 		}
 		displayValue = hoursToDisplay + ":" + minutesToDisplay + displayValue;
 

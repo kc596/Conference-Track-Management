@@ -1,5 +1,6 @@
 package tercept.conferencetrackmanagement;
 
+import java.util.List;
 import java.util.ArrayList;
 
 import tercept.conferencetrackmanagement.util.Time;
@@ -13,7 +14,6 @@ import tercept.conferencetrackmanagement.util.Time;
 
 class Session {
 	final boolean IS_MORNING_SESSION, IS_AFTERNOON_SESSION;
-	final int MAX_DURATION;
 	final int START_TIME;
 	private int freeTime;
 	private ArrayList<Talk> talks;
@@ -43,7 +43,6 @@ class Session {
 				break;
 
 			default: throw new IllegalArgumentException("Illegal type of session.");
-				break;
 		}
 	}
 
@@ -58,13 +57,20 @@ class Session {
 		return this.talks;
 	}
 
+	public int getFreeTime(){
+		return freeTime;
+	}
+
 	public String toString(){
 		int start = START_TIME;
 		String result = "";
 		for(Talk t:talks){
 			result += Time.minutesToDisplayTime(start);
-			result += t.getTitle()+"\n";
+			result += " "+t.getTitle()+" ";
+			if(t.IS_LIGHTNING) result += "lightning\n";
+			else result += t.getDuration()+"min\n";
 			start += t.getDuration();
 		}
+		return result;
 	}
 }

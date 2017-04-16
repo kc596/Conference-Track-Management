@@ -7,8 +7,8 @@ package tercept.conferencetrackmanagement;
  * @author Kunal Chaudhary
  */
 
-class Talk {
-	private int duration;
+class Talk implements Comparable<Talk>{
+	private Integer duration;
 	private String title;
 	final boolean IS_LIGHTNING;
 
@@ -24,5 +24,9 @@ class Talk {
 
 	public String getTitle(){
 		return title;
+	}
+
+	public int compareTo(Talk x){
+		return duration.compareTo(x.duration);
 	}
 }
