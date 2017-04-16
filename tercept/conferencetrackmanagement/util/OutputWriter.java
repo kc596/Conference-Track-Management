@@ -11,9 +11,14 @@ import java.io.PrintWriter;
  */
 
 public class OutputWriter{
-	PrintWriter writer = null;
-	final String outputFileLocation;
+	private PrintWriter writer = null;
+	private final String outputFileLocation;
 
+	/**
+	 * Initializes the local variables and opens the output file.
+	 *
+	 * @param outputFileLocation is the location of file to write output to.
+	 */
 	public OutputWriter(String outputFileLocation){
 		this.outputFileLocation = new File("").getAbsolutePath()+""+outputFileLocation;
 		try{
@@ -23,14 +28,16 @@ public class OutputWriter{
 		}
 	}
 
+	/**
+	 * function for writing some output to file.
+	 */
 	public void print(String s){
 		writer.print(s);
 	}
 
-	public void println(String s){
-		writer.println(s);
-	}
-
+	/**
+	 * closes the writer and release resources.
+	 */
 	public void close(){
 		writer.close();
 	}

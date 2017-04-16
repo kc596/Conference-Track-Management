@@ -7,7 +7,7 @@ import tercept.conferencetrackmanagement.util.Time;
 
 /**
  * The {@code Session} represents a session.
- * It is defined as a default class to prevent access from outside package.
+ * It is defined as a default class to prevent access from outside the package.
  * 
  * @author Kunal Chaudhary
  */
@@ -46,6 +46,11 @@ class Session {
 		}
 	}
 
+	/** 
+	 * Function to add a talk to session.
+	 * 
+	 * @throws RuntimeException if a talk of larger duration is added.
+	 */
 	public void addTalk(Talk t){
 		if(t.getDuration()>freeTime)
 			throw new RuntimeException("Duration of talk exceeds available time.");
@@ -53,14 +58,23 @@ class Session {
 		freeTime -= t.getDuration();
 	}
 
+	/**
+	 * @return the list of talks of this session.
+	 */
 	public List<Talk> getTalks(){
 		return this.talks;
 	}
 
+	/**
+	 * @return extra time in the session.
+	 */
 	public int getFreeTime(){
 		return freeTime;
 	}
 
+	/**
+	 * @return a String containing schedule of the session is given format.
+	 */
 	public String toString(){
 		int start = START_TIME;
 		String result = "";

@@ -11,12 +11,12 @@ import tercept.conferencetrackmanagement.util.*;
 
 public class Test {
 	public static void main(String[] args){
-		InputParser in = new InputParser("input/input.txt");
-		OutputWriter out = new OutputWriter("output/output.txt");
-		Scheduler scheduler = new Scheduler(in.getListOfTalksAsString());
-		for(String s: scheduler.getSchedule()){
-			System.out.print(s);
-		}
-		out.close();
+		InputParser in = new InputParser("input/input.txt");				// InputParser parses the input from input file
+		OutputWriter out = new OutputWriter("output/output.txt");			// OutpurWriter writes the output to output file
+		
+		Scheduler scheduler = new Scheduler(in.getListOfTalksAsString());	// Scheduler - creates the required conference
+		for(String s: scheduler.getSchedule())
+			out.print(s);
+		out.close();														// Closing the PrintWriter and releasing resource
 	}
 }
