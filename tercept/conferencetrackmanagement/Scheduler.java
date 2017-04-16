@@ -61,6 +61,7 @@ public class Scheduler {
 	 * Helper function for parsing a Talk from string
 	 *
 	 * @return a list containing all the talks
+	 * @throws RuntimeException if duration of any talk exceeds the duration of session.
 	 */
 	private ArrayList<Talk> parseListOfTalks(List<String> listOfTalksAsString){
 		ArrayList<Talk> listOfTalks = new ArrayList<Talk>();
@@ -75,6 +76,8 @@ public class Scheduler {
 				for(i=s.length()-4; s.charAt(i)<='9' && s.charAt(i)>='0'; i--)
 					minuteString = s.charAt(i)+minuteString;
 				int minutes = Integer.parseInt(minuteString);
+				if(minutes > AFTERNOON_SESSION_MAX_DURATION)
+					throw new RuntimeException("Talk : \""+s+"\" exceeds the duration of session.");
 				listOfTalks.add(new Talk(minutes, s.substring(0,i), false));
 				totalTalkDuration += minutes;
 			}
