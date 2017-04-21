@@ -1,4 +1,4 @@
-package tercept.conferencetrackmanagement;
+package kc596.conferencetrackmanagement;
 
 /**
  * The {@code Talk} class represents a Talk.

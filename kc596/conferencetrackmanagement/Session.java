@@ -1,9 +1,9 @@
-package tercept.conferencetrackmanagement;
+package kc596.conferencetrackmanagement;
 
 import java.util.List;
 import java.util.ArrayList;
 
-import tercept.conferencetrackmanagement.util.Time;
+import kc596.conferencetrackmanagement.util.Time;
 
 /**
  * The {@code Session} represents a session.

@@ -1,4 +1,4 @@
-package tercept.conferencetrackmanagement;
+package kc596.conferencetrackmanagement;
 
 import java.util.ArrayList;
 import java.util.List;

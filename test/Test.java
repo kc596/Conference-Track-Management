@@ -1,7 +1,8 @@
 package test;
 
-import tercept.conferencetrackmanagement.Scheduler;
-import tercept.conferencetrackmanagement.util.*;
+import kc596.conferencetrackmanagement.Scheduler;
+import kc596.conferencetrackmanagement.util.InputParser;
+import kc596.conferencetrackmanagement.util.OutputWriter;
 
 /**
  * The {@code Test} class to schedule an conference.

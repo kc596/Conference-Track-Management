@@ -1,4 +1,4 @@
-package tercept.conferencetrackmanagement.util;
+package kc596.conferencetrackmanagement.util;
 
 /**
  * The {@code Time} class provides utilities for managing time of sessions.

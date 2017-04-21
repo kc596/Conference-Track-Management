@@ -1,4 +1,4 @@
-package tercept.conferencetrackmanagement.util;
+package kc596.conferencetrackmanagement.util;
 
 import java.io.BufferedReader;
 import java.io.File;

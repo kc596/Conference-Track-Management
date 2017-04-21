@@ -1,4 +1,4 @@
-package tercept.conferencetrackmanagement;
+package kc596.conferencetrackmanagement;
 
 /**
  * The {@code Track} represents track of a conference.
