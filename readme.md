@@ -6,11 +6,11 @@
 ## Compiling and Running Project
  - **Windows Environment** :-  
  *Compile&nbsp;:* &nbsp; javac test/Test.java -d build/  
- *Run&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:* &nbsp; java -cp ./build/ test.Test  
+ *Run&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:* &nbsp; java -cp ./build/ test.Test  
   
  - **Unix** :-  
  *Compile&nbsp;:* &nbsp; javac test/Test.java -d build  
- *Run&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:* &nbsp; java -cp ./build/ test.Test  
+ *Run&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:* &nbsp; java -cp ./build/ test.Test  
 
 
 ## Input and Output
