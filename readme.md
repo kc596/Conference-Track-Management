@@ -87,3 +87,4 @@ First the talks are sorted in descending order and then they are fitted accordin
 ### To Do
 1. Adjust Networking event according to the last talk of afternoon session.  
 2. Calculate the efficieny of the schedule.
+3. Possible better solution could be using graph coloring.
